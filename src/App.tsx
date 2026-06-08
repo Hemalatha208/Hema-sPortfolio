@@ -7,6 +7,7 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import CustomCursor from "./components/CustomCursor";
+import { Certifications } from './components/Certifications';
 
 function App() {
   const { isDark, toggleDarkMode } = useDarkMode();
@@ -17,13 +18,12 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Certifications />
       <Projects />
       <Contact />
       <Footer />
       <>
-         <CustomCursor />
-
-         
+         <CustomCursor />  
       </>
     </div>
   );
