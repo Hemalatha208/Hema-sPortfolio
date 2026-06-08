@@ -8,6 +8,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import CustomCursor from "./components/CustomCursor";
 import { Certifications } from './components/Certifications';
+import { Experience } from './components/Experience';
 
 function App() {
   const { isDark, toggleDarkMode } = useDarkMode();
@@ -16,9 +17,10 @@ function App() {
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <Hero />
-      <About />
+      <About /> 
       <Skills />
       <Certifications />
+      <Experience />
       <Projects />
       <Contact />
       <Footer />

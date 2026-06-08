@@ -29,6 +29,7 @@ export function Navbar({ isDark, toggleDarkMode }: NavbarProps) {
   { name: 'About', id: 'about' },
   { name: 'Skills', id: 'skills' },
   { name: 'Certifications', id: 'certifications' },
+  { name: 'Experience', id: 'experience' },
   { name: 'Projects', id: 'projects' },
   { name: 'Contact', id: 'contact' },
 ];
