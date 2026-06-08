@@ -32,6 +32,14 @@ export function Hero() {
 </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+  href="https://drive.google.com/file/d/1QEjjNg9qxJ77SMOs7Yc5qhDfOsOT0_Nk/view?usp=sharing"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg shadow-lg"
+>
+  View Resume
+</a>
           <button
             onClick={() => scrollToSection('projects')}
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
