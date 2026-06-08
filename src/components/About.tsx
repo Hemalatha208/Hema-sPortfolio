@@ -25,15 +25,11 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                I'm a passionate frontend developer student on an exciting journey to master
-                modern web technologies. Every line of code I write is a step toward building
-                amazing digital experiences.
+                I am a fourth-year Computer Science Engineering student specializing in IoT, Cybersecurity, and Blockchain Technology at MVGR College of Engineering. Currently, I am pursuing an AI/ML Internship at NIT Warangal, where I am gaining hands-on experience in Machine Learning, Deep Learning, and Computer Vision technologies.
               </p>
 
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                I love the creative aspect of frontend development — turning ideas into
-                interactive, user-friendly interfaces. I'm constantly learning, experimenting,
-                and pushing myself to improve with each project.
+               I am passionate about Frontend Development and Artificial Intelligence, with experience in Python, Java, C++, JavaScript, Data Structures, DBMS, and modern web technologies. During my internship, I developed a Real-Time Pedestrian Detection System using YOLOv5, YOLOv8, YOLOv10-Lite, and OpenCV on the Penn-Fudan Pedestrian Dataset. I enjoy building intelligent solutions, creating responsive web applications, and continuously learning new technologies to solve real-world problems.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-4">
