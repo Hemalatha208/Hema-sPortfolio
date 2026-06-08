@@ -5,48 +5,29 @@ import type { Project } from '../types';
 export function Projects() {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
 
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: 'E-Commerce Dashboard',
-      description:
-        'A modern admin dashboard for managing products, orders, and customers with real-time analytics and charts.',
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js'],
-      githubLink: 'https://github.com/yourusername/project1',
-      liveLink: 'https://yourproject1.com',
-    },
-    {
-      id: 2,
-      title: 'Weather App',
-      description:
-        'Beautiful weather application with 5-day forecast, geolocation support, and detailed weather information.',
-      image: 'https://images.pexels.com/photos/209831/pexels-photo-209831.jpeg?auto=compress&cs=tinysrgb&w=800',
-      techStack: ['React', 'OpenWeather API', 'CSS Modules'],
-      githubLink: 'https://github.com/yourusername/project2',
-      liveLink: 'https://yourproject2.com',
-    },
-    {
-      id: 3,
-      title: 'Task Management App',
-      description:
-        'Intuitive task manager with drag-and-drop functionality, categories, priorities, and local storage.',
-      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-      techStack: ['React', 'Context API', 'Tailwind CSS', 'React DnD'],
-      githubLink: 'https://github.com/yourusername/project3',
-      liveLink: 'https://yourproject3.com',
-    },
-    {
-      id: 4,
-      title: 'Portfolio Website',
-      description:
-        'Responsive personal portfolio showcasing projects, skills, and experience with smooth animations.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      githubLink: 'https://github.com/yourusername/project4',
-      liveLink: 'https://yourproject4.com',
-    },
-  ];
+ const projects: Project[] = [
+{
+id: 1,
+title: 'Real-Time Pedestrian Detection System',
+description:
+'Developed a real-time pedestrian detection system using YOLOv5, YOLOv8, YOLOv10-Lite, and OpenCV. Implemented object detection on the Penn-Fudan Pedestrian Dataset and compared model performance based on accuracy and efficiency. Explored applications in smart surveillance and intelligent transportation systems.',
+image: 'https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=800',
+techStack: ['Python', 'OpenCV', 'YOLOv5', 'YOLOv8', 'YOLOv10-Lite', 'Computer Vision'],
+githubLink: 'https://github.com/Hemalatha208',
+liveLink: 'https://drive.google.com/file/d/1HPRbvjrKWP1gJk8IZs6nzo5Cng_zY72K/view?usp=sharing',
+},
+{
+id: 2,
+title: 'Personal Portfolio Website',
+description:
+'Designed and developed a responsive personal portfolio website to showcase my skills, projects, certifications, and achievements. Built using modern frontend technologies with a focus on user experience and responsive design.',
+image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
+githubLink: 'https://github.com/Hemalatha208/Hema-sPortfolio',
+liveLink: 'https://hema-s-portfolio.vercel.app',
+},
+];
+
 
   return (
     <section
