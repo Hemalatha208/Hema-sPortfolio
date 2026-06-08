@@ -27,6 +27,7 @@ export function Navbar({ isDark, toggleDarkMode }: NavbarProps) {
 
   const navLinks = [
   { name: 'About', id: 'about' },
+  { name: 'Education', id: 'education' },
   { name: 'Skills', id: 'skills' },
   { name: 'Certifications', id: 'certifications' },
   { name: 'Experience', id: 'experience' },

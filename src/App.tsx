@@ -9,6 +9,7 @@ import { Footer } from './components/Footer';
 import CustomCursor from "./components/CustomCursor";
 import { Certifications } from './components/Certifications';
 import { Experience } from './components/Experience';
+import { Education } from './components/Education';
 
 function App() {
   const { isDark, toggleDarkMode } = useDarkMode();
@@ -18,6 +19,7 @@ function App() {
       <Navbar isDark={isDark} toggleDarkMode={toggleDarkMode} />
       <Hero />
       <About /> 
+      <Education />
       <Skills />
       <Certifications />
       <Experience />
