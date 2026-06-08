@@ -20,7 +20,7 @@ const certifications = [
     link: 'https://drive.google.com/file/d/1hZrVBjTWDWid_GVSB_8WHeAVfF0hNT3w/view?usp=sharing',
   },
   {
-    name: 'NPTEL - Blockchhain and its Applicatiions',
+    name: 'NPTEL - Blockchain and Its Applications',
     issuer: 'NPTEL',
     link: 'https://drive.google.com/file/d/1Cfg1Q7kex3U9w-mECXg7VZVUQSs5Yuhy/view?usp=sharing',
   },
@@ -71,9 +71,22 @@ const certifications = [
                   size={32}
                 />
 
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
-                  {cert}
-                </h3>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+  {cert.name}
+</h3>
+
+<p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+  {cert.issuer}
+</p>
+
+<a
+  href={cert.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+>
+  View Certificate
+</a>
               </div>
             ))}
           </div>
