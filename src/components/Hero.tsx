@@ -33,7 +33,7 @@ export function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
-  href="/Resume.pdf"
+  href="https://drive.google.com/file/d/1QEjjNg9qxJ77SMOs7Yc5qhDfOsOT0_Nk/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   className="px-8 py-3 bg-blue-600 hover:bg-green-700 text-white font-medium rounded-lg shadow-lg"
