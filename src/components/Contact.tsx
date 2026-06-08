@@ -24,7 +24,7 @@ export function Contact() {
   <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
 
   <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12">
-    Third-year Computer Science Engineering student specializing in IoT,
+    Fourth-year Computer Science Engineering student specializing in IoT,
     Cybersecurity & Blockchain Technology at MVGR College of Engineering.
     Currently pursuing an AI/ML Internship at NIT Warangal and passionate
     about Frontend Development, Artificial Intelligence, Machine Learning,
