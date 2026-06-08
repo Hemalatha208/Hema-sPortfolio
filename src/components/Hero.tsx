@@ -24,27 +24,26 @@ export function Hero() {
         </h1>
 
         <h2 className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-6">
-          Frontend Developer Student
-        </h2>
+        AI/ML Intern @ NIT Warangal | Frontend Developer | Computer Vision Enthusiast
+  </h2>
 
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Passionate about creating beautiful and functional web experiences.
-          Currently learning modern web development and building projects to grow my skills.
-        </p>
+  Fourth-year Computer Science Engineering student specializing in IoT, Cybersecurity & Blockchain Technology at MVGR College of Engineering. Currently pursuing an AI/ML Internship at NIT Warangal and building innovative solutions in Frontend Development, Machine Learning, and Computer Vision.
+</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
             onClick={() => scrollToSection('projects')}
             className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
           >
-            View Projects
+            Explore My Projects
           </button>
 
           <button
             onClick={() => scrollToSection('contact')}
             className="px-8 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-medium rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200 border-2 border-gray-200 dark:border-gray-700"
           >
-            Contact Me
+            Let's Connect
           </button>
         </div>
 
