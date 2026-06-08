@@ -3,17 +3,43 @@ import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 
 export function Certifications() {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
-
-  const certifications = [
-    'Cisco Python Essentials',
-    'Cisco Data Science',
-    'Cisco Cybersecurity Essentials',
-    'GeeksforGeeks Full Stack Development',
-    'NPTEL Blockchain and it's applications'
-    'EduSkills AI/ML Virtual Internship',
-    'EduSkills Cloud Technologies Virtual Internship',
-  ];
-
+const certifications = [
+  {
+    name: 'Cisco Python Essentials',
+    issuer: 'Cisco Networking Academy',
+    link: 'https://drive.google.com/drive/folders/1tn30WNamPnJw2a1KuLzjVqV75wkp-rai?usp=sharing',
+  },
+  {
+    name: 'Cisco Data Science',
+    issuer: 'Cisco Networking Academy',
+    link: 'https://drive.google.com/file/d/1Myy6-dBTd-AK79EJn3-NWxW3KSJcDrA1/view?usp=sharing',
+  },
+  {
+    name: 'Cisco Cybersecurity Essentials',
+    issuer: 'Cisco Networking Academy',
+    link: 'https://drive.google.com/file/d/1hZrVBjTWDWid_GVSB_8WHeAVfF0hNT3w/view?usp=sharing',
+  },
+  {
+    name: 'NPTEL - Blockchhain and its Applicatiions',
+    issuer: 'NPTEL',
+    link: 'https://drive.google.com/file/d/1Cfg1Q7kex3U9w-mECXg7VZVUQSs5Yuhy/view?usp=sharing',
+  },
+  {
+    name: 'GeeksforGeeks Full Stack Development',
+    issuer: 'GeeksforGeeks',
+    link: 'https://drive.google.com/file/d/1bSPduasjrkXpMpl9JUxf15MYdY0Dt79e/view?usp=sharing',
+  },
+  {
+    name: 'EduSkills AI/ML Virtual Internship',
+    issuer: 'EduSkills',
+    link: 'https://drive.google.com/file/d/1FAl2KN0EzAFC4e45FYkBSpp-YQEngHUC/view?usp=sharing',
+  },
+  {
+    name: 'EduSkills IoT Cloud Engineering Virtual Internship',
+    issuer: 'EduSkills',
+    link: 'https://drive.google.com/file/d/1LQmNgQMkoCp6gbeztO1sYBqR20JrblTz/view?usp=sharing',
+  },
+];
   return (
     <section
       id="certifications"
