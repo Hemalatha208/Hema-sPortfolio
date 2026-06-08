@@ -9,6 +9,7 @@ export function Certifications() {
     'Cisco Data Science',
     'Cisco Cybersecurity Essentials',
     'GeeksforGeeks Full Stack Development',
+    'NPTEL Blockchain and it's applications'
     'EduSkills AI/ML Virtual Internship',
     'EduSkills Cloud Technologies Virtual Internship',
   ];
