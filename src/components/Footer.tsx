@@ -10,7 +10,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Hemalatha Vavilapalli</h3>
             <p className="text-gray-400 text-sm">
-              Frontend Developer Student passionate about creating beautiful web experiences.
+              AI/ML Intern @ NIT Warangal | Frontend Developer | Passionate about Machine Learning and Computer Vision.
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export function Footer() {
             <h3 className="text-xl font-bold mb-4">Connect</h3>
             <div className="flex gap-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Hemalatha208"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200"
@@ -65,7 +65,7 @@ export function Footer() {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/hemalatha-vavilapalli-a209542bb"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200"
@@ -74,7 +74,7 @@ export function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:vavilapallihemalatha2@gmail.com"
                 className="p-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors duration-200"
                 aria-label="Email"
               >
@@ -85,10 +85,11 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center">
-          <p className="text-gray-400 text-sm flex items-center justify-center gap-2">
-            © {currentYear} Hemalatha Vavilapalli Made with <Heart size={16} className="text-red-500" /> and
-            React
-          </p>
+          <p className="text-gray-400 text-sm flex items-center justify-center gap-2 flex-wrap">
+  © {currentYear} Hemalatha Vavilapalli • Built with
+  <Heart size={16} className="text-red-500" />
+  using React & TypeScript
+</p>
         </div>
       </div>
     </footer>
