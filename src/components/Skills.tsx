@@ -5,35 +5,63 @@ export function Skills() {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
 
   const skills = [
-    {
-      name: 'HTML',
-      icon: Code,
-      description: 'Semantic markup and accessibility-focused structure',
-      level: 'Advanced',
-      color: 'from-orange-400 to-red-500',
-    },
-    {
-      name: 'CSS',
-      icon: Palette,
-      description: 'Modern layouts with Flexbox, Grid, and animations',
-      level: 'Advanced',
-      color: 'from-blue-400 to-cyan-500',
-    },
-    {
-      name: 'JavaScript',
-      icon: Zap,
-      description: 'ES6+, async/await, DOM manipulation, and APIs',
-      level: 'Intermediate',
-      color: 'from-yellow-400 to-orange-500',
-    },
-    {
-      name: 'React',
-      icon: Blocks,
-      description: 'Hooks, component design, state management, and routing',
-      level: 'Intermediate',
-      color: 'from-cyan-400 to-blue-500',
-    },
-  ];
+  {
+    name: 'Python',
+    icon: Code,
+    description: 'Machine Learning, Deep Learning, Computer Vision, and AI development',
+    level: 'Advanced',
+    color: 'from-blue-400 to-yellow-500',
+  },
+  {
+    name: 'Frontend Development',
+    icon: Palette,
+    description: 'HTML, CSS, JavaScript, React, responsive web design',
+    level: 'Intermediate',
+    color: 'from-cyan-400 to-blue-500',
+  },
+  {
+    name: 'AI & Machine Learning',
+    icon: Zap,
+    description: 'Machine Learning, Deep Learning, Computer Vision, Data Analysis',
+    level: 'Intermediate',
+    color: 'from-purple-400 to-pink-500',
+  },
+  {
+    name: 'Computer Vision',
+    icon: Blocks,
+    description: 'YOLOv5, YOLOv8, YOLOv10-Lite, OpenCV, Object Detection',
+    level: 'Intermediate',
+    color: 'from-green-400 to-emerald-500',
+  },
+  {
+    name: 'Java',
+    icon: Code,
+    description: 'Object-Oriented Programming and problem solving',
+    level: 'Intermediate',
+    color: 'from-orange-400 to-red-500',
+  },
+  {
+    name: 'C & C++',
+    icon: Code,
+    description: 'Programming fundamentals, DSA, and competitive coding',
+    level: 'Intermediate',
+    color: 'from-indigo-400 to-purple-500',
+  },
+  {
+    name: 'Cybersecurity',
+    icon: Zap,
+    description: 'Cybersecurity Essentials, Cryptography, Security Fundamentals',
+    level: 'Intermediate',
+    color: 'from-red-400 to-pink-500',
+  },
+  {
+    name: 'Blockchain & DBMS',
+    icon: Blocks,
+    description: 'Database Management Systems and Blockchain concepts',
+    level: 'Intermediate',
+    color: 'from-teal-400 to-cyan-500',
+  },
+];
 
   return (
     <section
