@@ -23,12 +23,16 @@ export function Hero() {
           Hi, I'm <span className="text-blue-600 dark:text-blue-400">Hemalatha Vavilapalli</span>
         </h1>
 
-        <h2 className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-6">
-        AI/ML Intern @ NIT Warangal | Frontend Developer | Computer Vision Enthusiast
-  </h2>
+       <h2 className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 mb-6">
+  AI/ML Intern | Frontend Developer | CSE Student
+</h2>
 
-        <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-  Fourth-year Computer Science Engineering student specializing in IoT, Cybersecurity & Blockchain Technology at MVGR College of Engineering. Currently pursuing an AI/ML Internship at NIT Warangal and building innovative solutions in Frontend Development, Machine Learning, and Computer Vision.
+<p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+  Fourth-year Computer Science Engineering student specializing in IoT,
+  Cybersecurity & Blockchain Technology at MVGR College of Engineering.
+  Currently pursuing an AI/ML Internship at NIT Warangal and passionate
+  about Frontend Development, Artificial Intelligence, Machine Learning,
+  and Computer Vision.
 </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

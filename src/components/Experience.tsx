@@ -10,7 +10,7 @@ export function Experience() {
       organization: 'NIT Warangal',
       duration: '2025 - Present',
       description:
-        'Developed a Pedestrian Detection System using YOLOv5, YOLOv8, YOLOv10-lite, and OpenCV. Worked with the Penn-Fudan Dataset and explored Computer Vision, Object Detection, and Deep Learning techniques.',
+        'Working on Computer Vision and Machine Learning applications, including Pedestrian Detection Systems using modern AI techniques. Gaining hands-on experience in model development, data processing,and real-world AI solutions.',
     },
     {
       title: 'AI/ML Virtual Internship',
