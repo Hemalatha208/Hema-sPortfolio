@@ -1,124 +1,90 @@
 import { useState } from 'react';
-import { Github, Linkedin, Mail, Send } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import type { ContactFormData } from '../types';
 
 export function Contact() {
   const { elementRef, isVisible } = useIntersectionObserver({ threshold: 0.1 });
-  const [formData, setFormData] = useState<ContactFormData>({
-    name: '',
-    email: '',
-    message: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    console.log('Form submitted:', formData);
-    setSubmitStatus('success');
-    setIsSubmitting(false);
-
-    setFormData({ name: '', email: '', message: '' });
-
-    setTimeout(() => setSubmitStatus('idle'), 3000);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  return (
-    <section
-      id="contact"
-      ref={elementRef}
-      className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+ <section
+  id="contact"
+  ref={elementRef}
+  className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300"
+>
+  <div className="max-w-4xl mx-auto px-6 text-center">
+    <div
+      className={`transition-all duration-1000 delay-200 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
     >
-      <div className="max-w-4xl mx-auto px-6">
-        <div
-          className={`transition-all duration-1000 delay-200 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 dark:text-white mb-4">
-            Get In Touch
-          </h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+        Let's Connect
+      </h2>
 
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
+```
+  <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
 
-          <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-  I'm actively seeking opportunities in Frontend Development, AI/ML, and Software Development. Feel free to connect with me for collaborations, internships, or exciting projects.
-</p>
+  <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12">
+    Third-year Computer Science Engineering student specializing in IoT,
+    Cybersecurity & Blockchain Technology at MVGR College of Engineering.
+    Currently pursuing an AI/ML Internship at NIT Warangal and passionate
+    about Frontend Development, Artificial Intelligence, Machine Learning,
+    and Computer Vision.
+  </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                  Let's Connect
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-6">
-                 As a Computer Science student and AI/ML Intern at NIT Warangal, I am passionate about building innovative solutions using Frontend Development, Machine Learning, and Computer Vision. Let's connect and create something impactful together.
-                </p>
-              </div>
+  <div className="grid md:grid-cols-3 gap-6">
+    <a
+      href="mailto:vavilapallihemalatha2@gmail.com"
+      className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+    >
+      <Mail className="mx-auto text-blue-600 mb-4" size={32} />
+      <h3 className="font-bold text-lg text-gray-900 dark:text-white">
+        Email
+      </h3>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+        vavilapallihemalatha2@gmail.com
+      </p>
+    </a>
 
-              <div className="space-y-4">
-                <a
-                  href="mailto:vavilapallihemalatha2@gmail.com"
-                  className="flex items-center gap-4 p-4 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group"
-                >
-                  <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg group-hover:scale-110 transition-transform duration-200">
-                    <Mail className="text-blue-600 dark:text-blue-400" size={24} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
-                    <p className="text-gray-900 dark:text-white font-medium">
-                    vavilapallihemalatha2@gmail.com
-                    </p>
-                  </div>
-                </a>
+    <a
+      href="https://github.com/Hemalatha208"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+    >
+      <Github className="mx-auto text-gray-900 dark:text-white mb-4" size={32} />
+      <h3 className="font-bold text-lg text-gray-900 dark:text-white">
+        GitHub
+      </h3>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+        github.com/Hemalatha208
+      </p>
+    </a>
 
-                <a
-                  href="https://github.com/Hemalatha208"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group"
-                >
-                  <div className="p-3 bg-gray-100 dark:bg-gray-800 rounded-lg group-hover:scale-110 transition-transform duration-200">
-                    <Github className="text-gray-900 dark:text-white" size={24} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">GitHub</p>
-                    <p className="text-gray-900 dark:text-white font-medium">Hemalatha208</p>
-                  </div>
-                </a>
+    <a
+      href="https://www.linkedin.com/in/hemalatha-vavilapalli-a209542bb"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+    >
+      <Linkedin className="mx-auto text-blue-600 mb-4" size={32} />
+      <h3 className="font-bold text-lg text-gray-900 dark:text-white">
+        LinkedIn
+      </h3>
+      <p className="text-gray-600 dark:text-gray-400 text-sm mt-2">
+        Hemalatha Vavilapalli
+      </p>
+    </a>
+  </div>
 
-                <a
-                  href="https://www.linkedin.com/in/hemalatha-vavilapalli-a209542bb"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 group"
-                >
-                  <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg group-hover:scale-110 transition-transform duration-200">
-                    <Linkedin className="text-blue-600 dark:text-blue-400" size={24} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">LinkedIn</p>
-                    <p className="text-gray-900 dark:text-white font-medium">Hemalatha Vavilapalli</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  <div className="mt-12">
+    <p className="text-gray-600 dark:text-gray-400">
+      Open to Frontend Development, AI/ML, Software Development internships and opportunities.
+    </p>
+  </div>
+</div>
+```
+
+  </div>
+</section>
+
 }
