@@ -26,6 +26,16 @@ techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
 githubLink: 'https://github.com/Hemalatha208/Hema-sPortfolio',
 liveLink: 'https://hema-s-portfolio.vercel.app',
 },
+{
+  id: 3,
+  title: 'AI Study Notes Generator',
+  description:
+    'Built an AI-powered study notes generator using Google Gemini API. The application allows users to input topics or text and generates concise, structured study notes instantly. Designed with a focus on productivity and learning enhancement.',
+  image: 'https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&w=800',
+  techStack: ['React', 'TypeScript', 'Vite', 'Gemini API', 'Tailwind CSS'],
+  githubLink: 'https://github.com/Hemalatha208/__AI-powered-study-notes-generator___',
+  liveLink: 'https://ai-powered-study-notes-generator-one.vercel.app/',
+},
 ];
 
 
