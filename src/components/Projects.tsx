@@ -13,7 +13,7 @@ description:
 'Developed a real-time pedestrian detection system using YOLOv5, YOLOv8, YOLOv10-Lite, and OpenCV. Implemented object detection on the Penn-Fudan Pedestrian Dataset and compared model performance based on accuracy and efficiency. Explored applications in smart surveillance and intelligent transportation systems.',
 image: 'https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=800',
 techStack: ['Python', 'OpenCV', 'YOLOv5', 'YOLOv8', 'YOLOv10-Lite', 'Computer Vision'],
-githubLink: 'https://github.com/Hemalatha208',
+githubLink: 'https://github.com/Hemalatha208/Pedestrain-Detection-Using-YOLO.git',
 liveLink: 'https://drive.google.com/file/d/1HPRbvjrKWP1gJk8IZs6nzo5Cng_zY72K/view?usp=sharing',
 },
 {
